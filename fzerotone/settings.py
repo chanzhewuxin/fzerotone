@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
     # 我的应用
     'blogs',
-    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -84,14 +84,14 @@ WSGI_APPLICATION = 'fzerotone.wsgi.application'
 # }
 
 # mysql db
-DATABASES={
-    'default':{
+DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fzerotone',
         'USER': 'blogdb_user',
         'PASSWORD': 'Blog@2018',
         'HOST': '101.132.113.174',
-        'PORT': '3306',   
+        'PORT': '3306',
     }
 }
 
@@ -134,3 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]

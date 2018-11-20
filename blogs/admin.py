@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-# from models import ArticleCategory
+from . import models
 # Register your models here.
 
-# admin.site.register(ArticleCategory)
+admin.site.register(models.ArticleCategory)
+admin.site.register(models.Article)
