@@ -1,4 +1,11 @@
- .bg-img{
-     background-image: url(../img/home-bg.jpg);
-     background-size:100%;
- }
+
+.bg-img {
+    background-image: url(../img/home-bg.jpg);
+    background-size: 100%;
+}
+.main-content{
+    min-height: 488px;
+}
+.category>li{
+    margin-left:5px;
+}

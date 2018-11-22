@@ -1,4 +1,5 @@
-{%load bootstrap4%}
+{%load bootstrap4%} 
+{%load static%}
 
 <!DOCTYPE html>
 <html>
@@ -8,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Zero To One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/png" href="{%static 'blogs/img/favicon.ico'%}"/>
+    <link href="{%static 'blogs/css/index.css'%}" rel="stylesheet">
     {%bootstrap_css%}
     {%block header%} {%endblock header%}
     {%bootstrap_jquery_url%}
@@ -17,8 +21,8 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{%url 'blogs:index'%}">FROM ZERO TO ONE</a>
+        <div class="container"> 
+            <a class="navbar-brand" href="{%url 'blogs:index'%}">禅者无心</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,9 +40,9 @@
             </div>
         </div>
     </nav>
-    <div class="container">{%block content%}{%endblock %}</div>
+    <div class="container ">{%block content%}{%endblock %}</div>
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark ">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; www.fzerotone.cn 2018</p>
         </div>
